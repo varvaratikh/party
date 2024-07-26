@@ -1,1 +1,1 @@
-Проект, который представляет из себя визитку-приглашение на вечеринку.  Делала по большей части для практики, но в будущем было бы круто отправить такой проект друзьям в качестве приглашения на свою вечеринку.# party
+A project that is a business card-invitation to a party. I did it mostly for practice, but in the future it would be cool to send such a project to friends as an invitation to my party.# party
