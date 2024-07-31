@@ -4,6 +4,7 @@ import WhoIsGenius from "./components/WhoIsGenius";
 import About from "./pages/About";
 import InfoSection from "./components/InfoSection";
 import Info from "./pages/Info";
+import Heading from "./components/Heading";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
               <About/>
               <InfoSection/>
               <Info/>
+              <Heading/>
         </main>
       </div>
   );
