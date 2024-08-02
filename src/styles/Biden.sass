@@ -1,0 +1,20 @@
+.biden-frame
+  background-color: #FF5C00
+  width: 756px
+  height: 800px
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: transform 1s
+  transform-style: preserve-3d
+  cursor: pointer
+  position: relative
+  margin-left: 0
+
+.biden-frame.active
+  transform: rotateY(180deg)
+
+.biden-picture
+  width: 756px
+  height: 800px
+  backface-visibility: hidden

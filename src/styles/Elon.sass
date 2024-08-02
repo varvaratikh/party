@@ -1,0 +1,28 @@
+.elon-frame
+  background-color: #B1FF64
+  width: 756px
+  height: 800px
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: transform 1s
+  transform-style: preserve-3d
+  cursor: pointer
+  position: relative
+  margin-right: 0
+
+.elon-frame.active
+  transform: rotateY(180deg)
+
+.elon-content
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.elon-picture
+  backface-visibility: hidden
+
+.elon-picture
+  width: 414px
+  height: auto

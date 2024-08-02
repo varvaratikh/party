@@ -5,6 +5,7 @@ import About from "./pages/About";
 import InfoSection from "./components/InfoSection";
 import Info from "./pages/Info";
 import Heading from "./components/Heading";
+import Guests from "./pages/Guests";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
               <InfoSection/>
               <Info/>
               <Heading/>
+              <Guests/>
         </main>
       </div>
   );
