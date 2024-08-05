@@ -32,5 +32,3 @@ Start Client
 - Contact
     @varvaratikh
     frontendworking@gmail.com
-
-Project Link: 
