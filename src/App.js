@@ -9,6 +9,9 @@ import Guests from "./pages/Guests";
 import Algorithm from "./pages/Algorithm";
 import Menu from "./components/Menu";
 import Receipt from "./pages/Receipt";
+import Comments from "./pages/Comments";
+import Form from "./pages/Form";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -24,6 +27,9 @@ const App = () => {
               <Algorithm/>
               <Menu/>
               <Receipt/>
+              <Comments/>
+              <Form/>
+              <Footer/>
         </main>
       </div>
   );
