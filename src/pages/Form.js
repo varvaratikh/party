@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Form.sass';
 import rec from "../images/rectangle.png";
+import Darkrec from "../images/rectangle-dark.png";
 import monkey1 from "../images/monkey1.png";
 import monkey2 from "../images/monkey2.png";
 import monkey3 from "../images/monkey3.png";
@@ -14,8 +15,12 @@ import song from "../images/song.png";
 import aler from "../images/aler.png";
 import food from "../images/food.png";
 import wish from "../images/wish.png";
+import {useTheme} from "../context/ThemeContext";
 
 const Form = () => {
+
+    const { darkMode } = useTheme();
+
     const [formData, setFormData] = useState({
         answer1: '',
         answer2: '',
@@ -61,10 +66,16 @@ const Form = () => {
         }
     };
 
-    return (
-        <div className="form-container">
+    //<img className='back-pic'
+    //                  src={darkMode ? back_dark : back}
+    //                  alt="back-picture"/>
 
-            <img className='rec' src={rec}/>
+    return (
+        <div className={`form-container ${darkMode ? 'dark' : ''}`}>
+
+            <img className='rec'
+                 src={darkMode ? Darkrec : rec}/>
+
             <img className='monkey1' src={monkey1}/>
             <img className='monkey2' src={monkey2}/>
             <img className='monkey3' src={monkey3}/>

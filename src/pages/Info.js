@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/InfoPage.sass';
 import back from "../images/InfoPage/circle.png";
+import back_dark from "../images/InfoPage/circle-dark.png";
 import whenPic from "../images/InfoPage/When.png";
 import wherePic from "../images/InfoPage/Where.png";
 import whyPic from "../images/InfoPage/Why.png";
@@ -10,12 +11,17 @@ import group from "../images/InfoPage/group.png";
 
 import cause from "../images/InfoPage/summer.png";
 import circle from "../images/InfoPage/circle2.png";
+import {useTheme} from "../context/ThemeContext";
 
 const Info = () => {
 
+    const { darkMode } = useTheme();
+
     return (
-        <div className='back'>
-            <img className='back-pic' src={back} alt="back-picture"/>
+        <div className={`back ${darkMode ? 'back-dark' : ''}`}>
+            <img className='back-pic'
+                 src={darkMode ? back_dark : back}
+                 alt="back-picture"/>
 
             <div className='when'>
                 <img className='frame' src={frame} alt="frame"/>

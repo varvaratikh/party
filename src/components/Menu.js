@@ -4,6 +4,8 @@ import menu from "../images/menu.png";
 
 const Menu = () => {
 
+
+
     return (
         <div className='menu'>
             <img className='menu-photo' src={menu} alt="menu"/>

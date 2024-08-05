@@ -12,26 +12,25 @@ import Receipt from "./pages/Receipt";
 import Comments from "./pages/Comments";
 import Form from "./pages/Form";
 import Footer from "./components/Footer";
+import {ThemeProvider} from "./context/ThemeContext";
 
 const App = () => {
   return (
-      <div>
-        <main>
-              <Hello/>
-              <WhoIsGenius/>
-              <About/>
-              <InfoSection/>
-              <Info/>
-              <Heading/>
-              <Guests/>
-              <Algorithm/>
-              <Menu/>
-              <Receipt/>
-              <Comments/>
-              <Form/>
-              <Footer/>
-        </main>
-      </div>
+      <ThemeProvider>
+            <Hello/>
+            <WhoIsGenius/>
+            <About/>
+            <InfoSection/>
+            <Info/>
+            <Heading/>
+            <Guests/>
+            <Algorithm/>
+            <Menu/>
+            <Receipt/>
+            <Comments/>
+            <Form/>
+            <Footer/>
+      </ThemeProvider>
   );
 };
 
