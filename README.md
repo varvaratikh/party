@@ -28,7 +28,6 @@ Start Client
     run the command: npm run client
 
 
-
 - Contact
     @varvaratikh
     frontendworking@gmail.com
